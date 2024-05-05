@@ -14,7 +14,8 @@ inputs:
     required: false
     default: 'public'
 runs:
-  using: "composite"    
+  using: "composite"
+  steps:
     - name: Show system
       shell: bash
       run: |
