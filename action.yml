@@ -1,3 +1,20 @@
+name: 'Action_Initialization'
+description: 'Action'
+inputs:
+  ROUTER_MODEL:  
+    description: 'MODEL'
+    required: true
+    default: 'EA8500'
+  COMPILE_CONFIG: 
+    description: 'CONFIG'
+    required: true
+    default: 'EA8500-20240424-remove-igmpproxy'
+  FILES_CONFIG: 
+    description: 
+    required: false
+    default: 'public'
+runs:
+  using: "composite"    
     - name: Show system
       shell: bash
       run: |
